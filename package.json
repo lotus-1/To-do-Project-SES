@@ -1,0 +1,23 @@
+{
+  "name": "to-do-project-ses",
+  "version": "1.0.0",
+  "description": "project TDD to build a To-do app for our team SES",
+  "main": "dom.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotus-1/To-do-Project-SES.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lotus-1/To-do-Project-SES/issues"
+  },
+  "homepage": "https://github.com/lotus-1/To-do-Project-SES#readme",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.1"
+  }
+}
