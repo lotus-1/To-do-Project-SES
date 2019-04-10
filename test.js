@@ -36,8 +36,7 @@ test('Testing addTodo', function(t){
   var actual = logic.addTodo(testTodos, newTodoTest);
   var expected = [
     {
-      id:
-      1,
+      id:1,
       description: "Finish Todo App",
       done: false
   },
@@ -51,7 +50,29 @@ test('Testing addTodo', function(t){
     description: "Practice TDD",
     done: false
   }
-  ];
+];
   t.deepEqual(actual, expected, "New todo has been added to the todo array");
+  t.end();
+});
+
+var testIdToDelete = 2;
+
+test('leave the original array unchanged', function(t){
+  var actual = testTodos === logic.deleteTodo(testTodos, newTodoTest);
+  var expected = false;
+  t.equal(actual, expected, "Return array is a copy of origin array")
+  t.end();
+});
+
+test('Testing deleteTodo', function(t){
+  var actual = logic.deleteTodo(testTodos, testIdToDelete);
+  var expected = [
+  {
+    id: 1,
+    description: "Finish Todo App",
+    done: false
+  }
+];
+  t.deepEqual(actual, expected, "New todo has been delete to the todo array");
   t.end();
 });
