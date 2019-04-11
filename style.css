@@ -1,7 +1,19 @@
+body {
+  background-image: url("http://missiodei-gso.com/wp-content/uploads/2014/01/stainedpaper7.jpg");
+  background-size: cover;
+  text-align: center;
+  margin-top: 100px;
+
+}
 .mark, .delete {
   font-size: 20px;
-  background-color: green;
-
+  background-color: #bf8040;
 }
 .list {
   font-size: 35px;
+  text-align: center;
+}
+ul {
+  text-align: center;
+  list-style: inside;
+}
