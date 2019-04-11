@@ -22,6 +22,10 @@
     var spanText = document.createTextNode(todo.description);
     todoSpan.appendChild(spanText);
     todoNode.appendChild(todoSpan);
+    todoSpan.addEventListener('click', function(event) {
+      var newState0 = todoFunctions.addTodo(state, todo.id);
+      update(newState0);
+    });
 
     // this adds the delete button
     var deleteButtonNode = document.createElement('button');
