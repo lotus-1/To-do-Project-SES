@@ -1,6 +1,6 @@
 To Do Project By SES-Team
 
-to See our site Enter [here]()
+to See our site Enter [here](https://lotus-1.github.io/To-do-Project-SES/.)
 
 our team :
 Sara Saeed
@@ -15,6 +15,6 @@ the client can :
 * you can mark the tasks that are done, so that you can focus on the tasks you have left.
 we used.
 
- it was very challenging to code on exiting code . 
+ it was very challenging to code on exiting code .
 
  HOPE YOU LIKE IT ! :heart:
