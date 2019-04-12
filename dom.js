@@ -33,7 +33,6 @@
     deleteButtonNode.appendChild(deleteText);
     deleteButtonNode.addEventListener('click', function(event) {
       var newState = todoFunctions.deleteTodo(state, todo.id);
-      console.log("This is our newState: ", newState);
       update(newState);
     });
     todoNode.appendChild(deleteButtonNode);
@@ -74,7 +73,6 @@
 
       // hint: todoFunctions.addTodo
       var newState = todoFunctions.addTodo(state, { description: description }); // ?? change this!
-        console.log(newState);
         update(newState);
     });
   }
