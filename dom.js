@@ -7,9 +7,9 @@
   var addTodoForm = document.getElementById('add-todo');
 
   var state = [
-    { id: -3, description: 'Enass Kmal' },
-    { id: -2, description: 'Sara Saeed' },
-    { id: -1, description: 'Sabeel Halabi' },
+    { id: -3, description: 'Do the dishes' },
+    { id: -2, description: 'Prepare the food' },
+    { id: -1, description: 'Clean the floor' },
   ]; // this is our initial todoList
 
   // This function takes a todo, it returns the DOM node representing that todo
@@ -23,8 +23,8 @@
     todoSpan.appendChild(spanText);
     todoNode.appendChild(todoSpan);
     todoSpan.addEventListener('click', function(event) {
-      var newState0 = todoFunctions.addTodo(state, todo.id);
-      update(newState0);
+      var newState = todoFunctions.addTodo(state, todo.id);
+      update(newState);
     });
 
     // this adds the delete button
@@ -32,9 +32,9 @@
     var deleteText = document.createTextNode('Delete');
     deleteButtonNode.appendChild(deleteText);
     deleteButtonNode.addEventListener('click', function(event) {
-      var newState = todoFunctions.deleteTodo(state, todo.id);
-      console.log("This is our newState: ", newState);
-      update(newState);
+      var newState1 = todoFunctions.deleteTodo(state, todo.id);
+      // console.log("This is our newState: ", newState);
+      update(newState1);
     });
     todoNode.appendChild(deleteButtonNode);
 
@@ -43,8 +43,8 @@
   var markText = document.createTextNode("Mark");
   markButtonNode.appendChild(markText);
   markButtonNode.addEventListener('click', function(event) {
-    var newState1 = todoFunctions.markTodo(state, todo.id);
-    update(newState1);
+    var newState2 = todoFunctions.markTodo(state, todo.id);
+    update(newState2);
   });
   if (todo.done) {
         var result = todo.description.strike();
