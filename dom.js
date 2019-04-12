@@ -35,6 +35,8 @@
       var newState1 = todoFunctions.deleteTodo(state, todo.id);
       // console.log("This is our newState: ", newState);
       update(newState1);
+      var newState = todoFunctions.deleteTodo(state, todo.id);
+      update(newState);
     });
     todoNode.appendChild(deleteButtonNode);
 
@@ -74,7 +76,6 @@
 
       // hint: todoFunctions.addTodo
       var newState = todoFunctions.addTodo(state, { description: description }); // ?? change this!
-        console.log(newState);
         update(newState);
     });
   }
