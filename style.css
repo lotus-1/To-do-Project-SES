@@ -1,3 +1,4 @@
+
 body {
   background-image:url("https://hires.shareable.com/resources/preemployment/img/blogs/thumbnails/B-how-to-do-employment-screening-Thumbnail-082517.png");
   /* background-image: url("http://missiodei-gso.com/wp-content/uploads/2014/01/stainedpaper7.jpg"); */
@@ -8,7 +9,7 @@ body {
 }
 .mark, .delete {
   font-size: 20px;
-  background-color: #bf8040;
+  background-color: #ffff00;
 }
 .list {
   font-size: 35px;
@@ -20,4 +21,10 @@ ul {
 }
 input {
   text-align: center;
+  font-size: 18px;
+}
+h1{
+  font-size: 80px;
+  color: #ffff00;
+  font-style:oblique;
 }
